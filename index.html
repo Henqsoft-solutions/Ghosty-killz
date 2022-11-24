@@ -1,0 +1,136 @@
+﻿<!DOCTYPE html>
+<html>
+    <head>
+        <title>❤ Henq killz ❤</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="style.css">
+        <script src="sweetAlert2.js"></script>
+    </head>
+    <body>
+        <div class="container" id="container">
+            <div class="gameName">Ghosty Killz</div>
+            <img id="playButton" src="play-btn.png">
+            <div class="settings-menu">
+                <div id="backBtn"></div>
+                <div id="highScoreBtn"></div>
+                <div id="postBtn"></div>
+            </div>
+        </div>
+        <div class="level-container none" id="levelContainer">
+            <header><img src="three-stars.png"> Level Select <img src="three-stars.png"></header>
+            <div class="levels-box">
+                <div id="landScaper" class="landScape">Back</div>
+                <div id="level1" class="level"><aside>1</aside><img src="three-stars.png"></div>
+                <div id="level2" class="level"><aside>2</aside><img src="three-stars.png"></div>
+                <div id="level3" class="level"><aside>3</aside><img src="three-stars.png"></div>
+                <div id="level4" class="level"><aside>4</aside><img src="three-stars.png"></div>
+                <div id="level5" class="level"><aside>5</aside><img src="three-stars.png"></div>
+                <div id="level6" class="level"><aside>6</aside><img src="three-stars.png"></div>
+                <div id="level7" class="level"><aside>7</aside><img src="three-stars.png"></div>
+                <div id="level8" class="level"><aside>8</aside><img src="three-stars.png"></div>
+                <div id="level9" class="level"><aside>9</aside><img src="three-stars.png"></div>
+                <div id="level10" class="level"><aside>10</aside><img src="three-stars.png"></div>
+                <div id="level11" class="level"><aside>11</aside><img src="three-stars.png"></div>
+                <div id="level12" class="level"><aside>12</aside><img src="three-stars.png"></div>
+                <div id="level13" class="level"><aside>13</aside><img src="three-stars.png"></div>
+                <div id="level14" class="level"><aside>14</aside><img src="three-stars.png"></div>
+                <div id="level15" class="level"><aside>15</aside><img src="three-stars.png"></div>
+            </div>
+        </div>
+        
+        <canvas id="canvas" class="canvas none">
+            <h1>Wow!, I can't believe your browser is not supported in this age and time</h1>
+            <h6>Please download an up-to-date broswer to be able to play this game</h6>
+        </canvas>
+        
+        <div class="none" id="gameImages">
+            <img src="hoverBoard.png" id="hoverBoard">
+<!--
+            <img src="robotIdle.png" id="robotIdle">
+            <img src="robotRun.png" id="robotJump">
+            <img src="robotJump.png" id="robotJump">
+            <img src="robotDead.png" id="robotDead">
+-->
+            <img src="shadow_dog.png" id="shadowDogSprite">
+            <img src="enemy1.png" id="batImg">
+            <img src="enemy_1.png" id="wormImg">
+            <img src="enemy3.png" id="owlImg">
+            <img src="enemy4.png" id="spinnerImg">
+            <img src="enemy2.png" id="sideBatImg">
+            <img src="enemy_ghost.png" id="ghostImg">
+            <img src="enemy_spider.png" id="spiderImg">
+            <img src="raven.png" id="ravenImg">
+<!--
+            <img src="coin1.png" id="coin1">
+            <img src="coin2.png" id="coin2">
+-->
+            <img src="coin3.png" id="coin3">
+            <img src="PowerUp1.png" id="PowerUp1">
+            <img src="PowerUp2.png" id="PowerUp2">
+            <img src="Crate.png" id="crateImg">
+            <img src="Crystal.png" id="crystalImg">
+            <img src="IceBox.png" id="iceboxImg">
+            <img src="Igloo.png" id="iglooImg">
+            <img src="Stone.png" id="stoneImg">
+            <img src="Sign_1.png" id="signImg">
+            <img src="Sign_2.png" id="signsecImg">
+            <img src="Tree_1.png" id="treeImg">
+            <img src="Tree_2.png" id="treesecImg">
+            <img src="SnowMan.png" id="snowImg">
+            <img src="bird.png" id="birdImg">
+        </div>
+        
+        <div id="music" class="none">
+            <audio id="running" src="run.mp3" loop></audio>
+            <audio id="powerSound" src="powerSound.wav"></audio>
+            <audio id="gameMusic1" src="gameMusic.mp3" loop></audio>
+            <audio id="gameMusic2" src="gameMusic2.wav" loop></audio>
+            <audio id="gameMusic3" src="gameMusic3.mp3" loop></audio>
+            <audio id="gameMusic4" src="gameMusic4.mp3" loop></audio>
+            <audio id="gameMusic5" src="gameMusic5.mp3" loop></audio>
+            <audio id="gameMusic6" src="gameMusic6.mp3" loop></audio>
+            <audio id="uiMusic1" src="backgroundSound.mp3" loop></audio>
+            <audio id="uiMusic2" src="backgroundSound1.mp3" loop></audio>
+            <audio id="uiMusic3" src="backgroundSound2.mp3" loop></audio>
+            <audio id="uiMusic4" src="backgroundSound3.mp3" loop></audio>
+            <audio id="uiMusi5" src="backgroundSound4.mp3" loop></audio>
+            <audio id="birdCry1" src="birdCry.wav"></audio>
+            <audio id="birdCry2" src="birdCry2.mp3"></audio>
+            <audio id="coinGet1" src="coinGet.mp3"></audio>
+            <audio id="coinGet2" src="coinGet1.mp3"></audio>
+            <audio id="coinGet3" src="coinGet2.wav"></audio>
+            <audio id="die" src="die.mp3"></audio>
+            <audio id="playerDie" src="dying.wav"></audio>
+            <audio id="endGame1" src="endGame.mp3" loop></audio>
+            <audio id="endGame2" src="endGame2.m4a" loop></audio>
+            <audio id="brutality" src="endGame3.mp3"></audio>
+            <audio id="explosion1" src="explosionSound.wav"></audio>
+            <audio id="explosion2" src="explosionSound2.wav"></audio>
+            <audio id="explosion3" src="explosionSound3.mp3"></audio>
+            <audio id="explosion4" src="explosionSound4.mp3"></audio>
+            <audio id="explosion5" src="explosionSound5.mp3"></audio>
+            <audio id="explosion6" src="explosionSound6.mp3"></audio>
+            <audio id="gameOverSound" src="gameOver.mp3"></audio>
+        </div>
+        
+        <div class="scoreBoard none" id="scoreBoard">
+            <div id="scoreCont" class="none">0</div>
+            <div id="lifeBar" class="none">
+                <div id="lifeLoader" class="none"></div>
+            </div>
+            <div id="distanceCont" class="none">0</div>
+        </div>
+        
+        <div class="auxscoreBoard none" id="auxscoreBoard">
+            <div id="coinCont" class="none">0</div>
+            <img src="pause.png" id=gamePause class="none">
+            <img src="play2.png" id="gamePlay" class="none">
+            <div id="commentBox" class="none">Level
+                </div>
+            <div id="enemiesCont" class="none">0</div>
+        </div>
+        
+        <script src="script.js">What the hell will make your browser not support javascript in this century</script>
+    </body>
+</html>
