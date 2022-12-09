@@ -1441,6 +1441,8 @@ levels.forEach((level, levelIndex)=>{
         powerSound.play();
         uiMusicGet.pause();
         gameMusicGet.play();
+        canvas.width = innerWidth;
+        canvas.height = innerHeight;    
     });
 });
     
